@@ -1,0 +1,270 @@
+* { 
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	background: #f8f8f8;
+	color: #4a4948;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*************************************
+Navigation
+*************************************/
+
+.main-header {
+	padding-bottom: 16px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header a {
+	font-weight: 700;
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-header ul li {
+	padding: 16px;
+	margin: 8px 16px;
+	background: #fff;
+	text-transform: uppercase;
+}
+
+.main-header ul li:active,
+.main-header ul li:hover {
+	opacity: 0.8;
+}
+
+.main-header .logo {
+	font-size: 32px;
+	display: block;
+	margin: 32px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main-header {
+		flex-direction: column;
+		justify-content: flex-end;
+  		align-items: center;
+	}
+
+	.main-header ul {
+		display: flex;
+    }
+
+    .main-header ul li {
+    	background: none;
+    	padding: 0;
+    }
+
+    .main-header .logo {
+    	margin-top: 32px;
+    	margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+	.main-header {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.main-header .logo {
+		margin-left: 16px;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 16px;
+	}
+	.main-header nav ul {
+		margin-top: 16px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*************************************
+Banner
+*************************************/
+
+.banner {
+	padding: 32px 16px;
+	text-align: center;
+	
+}
+
+.banner img {
+	margin: 0 auto;
+}
+
+.banner .headline {
+	margin-top: 22px;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+	.banner {
+		display: flex;
+	}
+	.banner img {
+		order: 1;
+	}
+	.banner .headline {
+		text-align: left;
+		margin-right: 16px;
+	}
+}
+
+/*************************************
+Portfolio
+*************************************/
+
+.portfolio {
+	background: #fff;
+	text-align: center;
+}
+
+.portfolio h2 {
+	margin-top: 42px;
+}
+
+.portfolio figure {
+	margin-top: 42px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.portfolio figure:last-child {
+	margin-bottom: 42px;
+}
+
+.portfolio figure figcaption {
+	margin: 32px 0;
+}
+
+.portfolio figure figcaption h3 {
+	font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+	.portfolio .container {
+   		display: -webkit-flex;
+   		display: flex;
+   		flex-wrap: wrap;
+   		align-items: center;
+   		justify-content: center;
+	}
+	.portfolio .container > .item {
+		width: 45%;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+	.portfolio .container > .item {
+		width: 30%;
+	}
+}
+
+/*************************************
+Footer
+*************************************/
+footer {
+	text-align: center;
+	padding: 0 16px;
+}
+
+footer a {
+	color: #7f7f7f;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+footer h2 {
+	margin-top: 42px;
+}
+
+footer .headline {
+	margin-top: 42px;
+	font-weight: 300;
+	font-size: 22px;
+	max-width: 580px;
+	margin-left: auto; /* this can be done with flex? */
+	margin-right: auto; /* this can be done with flex? */
+}
+
+footer ul {
+	margin-top: 42px;
+}
+
+footer ul li {
+	font-weight: 300;
+	font-size: 22px;
+	margin: 16px 0;
+}
+
+footer .inner {
+	border-top: 1px solid #e7e7e7;
+	margin-top: 42px;
+	display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+footer .inner a {
+	font-weight: 700;
+	color: #4a4a4a;
+}
+
+footer nav {
+	display: none;
+}
+
+footer nav ul {
+	margin: 0;
+}
+
+footer nav ul li {
+	margin: 0 16px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+	footer .top {
+		display: none;
+	}
+	footer nav {
+		display: block;
+	}
+	footer nav ul {
+		display: flex;
+	}
+	footer .inner {
+		padding-top: 24px;
+		padding-bottom: 64px;
+	}
+}
+
+
+
