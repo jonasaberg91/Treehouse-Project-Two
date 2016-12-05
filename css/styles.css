@@ -13,6 +13,12 @@ html, body {
 	flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+	body {
+		max-width: 1240px;
+		margin: 0 auto;
+	}
+}
 
 img {
 	max-width: 100%;
@@ -87,6 +93,7 @@ Navigation
 	.main-header {
 		justify-content: space-between;
 		flex-direction: row;
+		padding-top: 16px;
 	}
 	.main-header .logo {
 		margin-left: 16px;
@@ -142,6 +149,11 @@ Portfolio
 .portfolio {
 	background: #fff;
 	text-align: center;
+}
+
+.portfolio a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .portfolio h2 {
@@ -266,5 +278,9 @@ footer nav ul li {
 	}
 }
 
-
+@media screen and (min-width: 1024px) {
+	footer .inner {
+		padding-bottom: 24px;
+	}
+}
 
